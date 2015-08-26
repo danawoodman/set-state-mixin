@@ -2,7 +2,6 @@
 
 ![](https://travis-ci.org/danawoodman/set-state-mixin.svg)
 ![](https://img.shields.io/npm/v/set-state-mixin.svg)
-![](https://img.shields.io/github/license/danawoodman/set-state-mixin.svg)
 ![](https://img.shields.io/versioneye/d/danawoodman/set-state-mixin.svg)
 ![](https://img.shields.io/requires/github/danawoodman/set-state-mixin.svg)
 ![](https://img.shields.io/npm/dm/set-state-mixin.svg)
@@ -68,7 +67,7 @@ See [the API docs](api.md) for full documentation.
 
 ## License
 
-MIT &copy; [Dana Woodman][dana]
+[MIT](license) &copy; [Dana Woodman][dana]
 
 
 [reflux]: https://github.com/reflux/refluxjs
