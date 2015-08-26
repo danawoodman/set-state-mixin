@@ -1,8 +1,8 @@
 # set-state-mixin 
 
-![](https://travis-ci.org/danawoodman/set-state-mixin.svg)
+![](https://img.shields.io/travis/danawoodman/set-state-mixin.svg)
 ![](https://img.shields.io/npm/v/set-state-mixin.svg)
-![](https://img.shields.io/versioneye/d/danawoodman/set-state-mixin.svg)
+![](https://img.shields.io/versioneye/d/55de3dca2383e900170000b6.svg)
 ![](https://img.shields.io/requires/github/danawoodman/set-state-mixin.svg)
 ![](https://img.shields.io/npm/dm/set-state-mixin.svg)
 
