@@ -21,6 +21,7 @@ npm install --save set-state-mixin
 
 ```js
 var reflux = require('reflux')
+var setStateMixin = require('set-state-mixin')
 
 var INITIAL_STATE = {
   loading: false,
