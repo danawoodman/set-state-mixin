@@ -1,0 +1,56 @@
+{
+  "name": "set-state-mixin",
+  "version": "1.0.0",
+  "description": "Reflux `setState` mixin to get React-like `setState` behavior in Reflux stores.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run lint && npm test && npm run docs",
+    "dev": "mocha -w",
+    "docs": "jsdoc2md index.js > api.md",
+    "lint": "eslint .",
+    "test": "mocha"
+  },
+  "author": {
+    "email": "dana@danawoodman.com",
+    "name": "Dana Woodman",
+    "url": "danawoodman.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danawoodman/set-state-mixin.git"
+  },
+  "keywords": [
+    "flux",
+    "reflux",
+    "react",
+    "mixin",
+    "mixins",
+    "state",
+    "store",
+    "stores",
+    "util",
+    "utilitiy"
+  ],
+  "author": "Dana Woodman <dana@danawoodman.com> (http://danawoodman.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/danawoodman/set-state-mixin/issues"
+  },
+  "homepage": "https://github.com/danawoodman/set-state-mixin#readme",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "eslint": "^1.2.1",
+    "eslint-plugin-nodeca": "^1.0.3",
+    "jsdoc-to-markdown": "^1.1.1",
+    "mocha": "^2.2.5",
+    "mocha-sinon": "^1.1.4",
+    "sinon": "^1.16.1",
+    "sinon-chai": "^2.8.0"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
