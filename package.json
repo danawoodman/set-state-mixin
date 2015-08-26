@@ -1,6 +1,6 @@
 {
   "name": "set-state-mixin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Reflux `setState` mixin to get React-like state behavior in Reflux stores.",
   "main": "index.js",
   "scripts": {
@@ -10,11 +10,7 @@
     "lint": "eslint .",
     "test": "mocha"
   },
-  "author": {
-    "email": "dana@danawoodman.com",
-    "name": "Dana Woodman",
-    "url": "danawoodman.com"
-  },
+  "author": "Dana Woodman <dana@danawoodman.com> (http://danawoodman.com/)",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -34,7 +30,6 @@
     "util",
     "utilitiy"
   ],
-  "author": "Dana Woodman <dana@danawoodman.com> (http://danawoodman.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/danawoodman/set-state-mixin/issues"
