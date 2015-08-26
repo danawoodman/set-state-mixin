@@ -22,7 +22,7 @@ var INITIAL_STATE = {
 
 var PeopleStore = Reflux.createStore({
   mixins: {
-    SetStateMixin(INITIAL_STATE)
+    setStateMixin(INITIAL_STATE)
   },
 
   onCreate: function (person) {
@@ -58,4 +58,10 @@ var PeopleStore = Reflux.createStore({
 See [the API docs](api.md) for full documentation.
 
 
+## License
+
+MIT &copy; [Dana Woodman][dana]
+
+
 [reflux]: https://github.com/reflux/refluxjs
+[dana]: http://danawoodman.com

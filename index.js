@@ -2,12 +2,12 @@
  * An easier way to trigger a store's state
  * based on some conventions.
  *
- * @module
+ * @module setStateMixin
  * @example
  * const INITIAL_STATE = { foo: 'bar' }
  * const MyStore = Reflux.createStore({
  *   mixins: {
- *     SetStateMixin(INITIAL_STATE)
+ *     setStateMixin(INITIAL_STATE)
  *   }
  * })
  */
@@ -20,7 +20,7 @@ var _ = require('lodash')
  * @param {Object} initialState - The initial state for the store
  * @returns {Mixin} - The mixin with the initial state closure
  */
-module.exports = function SetStateMixin(initialState) {
+module.exports = function setStateMixin(initialState) {
 
   /**
    * @mixin

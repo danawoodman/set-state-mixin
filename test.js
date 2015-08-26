@@ -9,7 +9,7 @@ var expect = chai.expect
 var mixin = require('./')
 
 
-describe('SetStateMixin', function () {
+describe('setStateMixin', function () {
   var state
   var obj
   var spy
