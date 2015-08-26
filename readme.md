@@ -1,4 +1,4 @@
-# set-state-mixin
+# set-state-mixin ![](https://travis-ci.org/danawoodman/set-state-mixin.svg)
 
 > `setState` like behavior for [Reflux][reflux] stores.
 
