@@ -27,8 +27,7 @@ export default function setStateMixin(initialState) {
    */
   return {
     init() {
-      this.state = {}
-      this.resetState()
+      this.state = _.cloneDeep(initialState)
     },
 
     /**
@@ -45,11 +44,7 @@ export default function setStateMixin(initialState) {
      * @param {Object} state - The state to merge with the current state
      * @param {Boolean} [trigger=true] - Whether to trigger a state update (useful for testing)
      */
-    setState(state, trigger) {
-      if (typeof trigger === 'undefined') {
-        trigger = true
-      }
-
+    setState(state, trigger = true) {
       _.assign(this.state, state)
       if (trigger) {
         this.trigger(this.state)

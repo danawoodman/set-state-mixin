@@ -19,11 +19,15 @@ describe('setStateMixin', () => {
     obj.init()
   })
 
+  afterEach(() => {
+    obj.trigger = null
+  })
+
   it('should set initial state', () => {
     expect(obj.state).to.eql(state)
   })
 
-  it('should set state', () => {
+  it('should set state and trigger', () => {
     const newState = {
       foo: 'baz',
       other: true,
@@ -31,6 +35,7 @@ describe('setStateMixin', () => {
     expect(obj.state).to.eql(state)
     obj.setState(newState)
     expect(obj.state).to.eql(newState)
+    expect(spy).to.have.been.called
   })
 
   it('should not trigger if option is passed', () => {
@@ -41,7 +46,7 @@ describe('setStateMixin', () => {
     }
     obj.setState(newState, false)
     expect(obj.state).to.eql(newState)
-    expect(spy).to.have.been.called
+    expect(spy).to.not.have.been.called
   })
 
   it('should reset state', () => {
