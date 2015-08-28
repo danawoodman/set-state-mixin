@@ -1,6 +1,6 @@
 {
   "name": "set-state-mixin",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Reflux `setState` mixin to get React-like state behavior in Reflux stores.",
   "main": "lib/index.js",
   "config": {
