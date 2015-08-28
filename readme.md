@@ -3,7 +3,6 @@
 ![](https://img.shields.io/travis/danawoodman/set-state-mixin.svg)
 ![](https://img.shields.io/npm/v/set-state-mixin.svg)
 [![Dependency Status](https://www.versioneye.com/user/projects/55de3dca2383e900170000b6/badge.svg?style=flat)](https://www.versioneye.com/user/projects/55de3dca2383e900170000b6)
-[![Requirements Status](https://requires.io/github/danawoodman/set-state-mixin/requirements.svg?branch=master)](https://requires.io/github/danawoodman/set-state-mixin/requirements/?branch=master)<F37>
 ![](https://img.shields.io/npm/dm/set-state-mixin.svg)
 
 > `setState` like behavior for [Reflux][reflux] stores.
