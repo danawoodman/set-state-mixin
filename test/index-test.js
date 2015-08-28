@@ -1,24 +1,17 @@
-/* globals describe, it */
 /* eslint no-unused-expressions:0 */
 
-var sinon = require('sinon')
-var chai = require('chai')
-var sinonChai = require('sinon-chai')
-chai.use(sinonChai)
-var expect = chai.expect
-var mixin = require('./')
+import setStateMixin from '../src'
 
+describe('setStateMixin', () => {
+  let state
+  let obj
+  let spy
 
-describe('setStateMixin', function () {
-  var state
-  var obj
-  var spy
-
-  beforeEach(function () {
+  beforeEach(() => {
     state = {
       foo: 'bar',
     }
-    obj = mixin(state)
+    obj = setStateMixin(state)
 
     spy = sinon.spy()
     obj.trigger = spy
@@ -26,12 +19,12 @@ describe('setStateMixin', function () {
     obj.init()
   })
 
-  it('should set initial state', function () {
+  it('should set initial state', () => {
     expect(obj.state).to.eql(state)
   })
 
-  it('should set state', function () {
-    var newState = {
+  it('should set state', () => {
+    const newState = {
       foo: 'baz',
       other: true,
     }
@@ -40,9 +33,9 @@ describe('setStateMixin', function () {
     expect(obj.state).to.eql(newState)
   })
 
-  it('should not trigger if option is passed', function () {
+  it('should not trigger if option is passed', () => {
     expect(obj.state).to.eql(state)
-    var newState = {
+    const newState = {
       foo: 'baz',
       other: true,
     }
@@ -51,8 +44,8 @@ describe('setStateMixin', function () {
     expect(spy).to.have.been.called
   })
 
-  it('should reset state', function () {
-    var newState = {
+  it('should reset state', () => {
+    const newState = {
       foo: 'bing',
     }
     expect(obj.state).to.eql(state)

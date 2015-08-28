@@ -1,3 +1,5 @@
-.DS_Store
+.env
+node_modules/
 *.log
-node_modules
+.yo-rc.json
+npm-debug.log*

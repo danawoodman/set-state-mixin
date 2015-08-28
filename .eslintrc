@@ -1,4 +1,11 @@
 {
+  "globals": {
+    "expect": true,
+    "sinon": true,
+    "describe": true,
+    "chai": true,
+    "it": true
+  },
   "ecmaFeatures": {
     "arrowFunctions": true,
     "binaryLiterals": true,

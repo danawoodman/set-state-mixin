@@ -24,7 +24,7 @@ const MyStore = Reflux.createStore({
 Initializes the mixin.
 
 **Kind**: Exported function  
-**Returns**: <code>Mixin</code> - - The mixin with the initial state closure  
+**Returns**: <code>Mixin</code> - - The mixin with the initialState closure  
 
 | Param | Type | Description |
 | --- | --- | --- |
