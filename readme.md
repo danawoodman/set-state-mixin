@@ -4,6 +4,7 @@
 [![Dependency Status](https://img.shields.io/david/danawoodman/set-state-mixin.svg)](https://david-dm.org/danawoodman/set-state-mixin)
 ![](https://img.shields.io/npm/dm/set-state-mixin.svg)
 ![](https://img.shields.io/npm/v/set-state-mixin.svg)
+[![Code Climate](https://codeclimate.com/github/danawoodman/set-state-mixin/badges/gpa.svg)](https://codeclimate.com/github/danawoodman/set-state-mixin)
 
 > `setState` like behavior for [Reflux][reflux] stores.
 
