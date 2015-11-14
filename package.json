@@ -4,14 +4,16 @@
   "description": "Reflux `setState` mixin to get React-like state behavior in Reflux stores.",
   "main": "lib/index.js",
   "config": {
-    "entry": "src/index.js"
+    "entry": "src",
+    "output": "lib",
+    "mainFile": "src/index.js"
   },
   "scripts": {
-    "build": "babel -o $npm_package_main $npm_package_config_entry",
+    "build": "babel $npm_package_config_entry --out-dir $npm_package_config_output",
     "dist": "npm run lint & npm run build & npm run docs & npm test",
-    "docs": "jsdoc2md $npm_package_config_entry > api.md",
+    "docs": "jsdoc2md $npm_package_config_mainFile > api.md",
     "lint": "eslint .",
-    "prepublish": "npm run dist",
+    "prepublish": "npm run build",
     "test": "mocha",
     "watch": "npm run watch-build & npm run watch-test",
     "watch-build": "npm run build -- --watch",
@@ -41,13 +43,13 @@
   "homepage": "https://github.com/danawoodman/set-state-mixin#readme",
   "devDependencies": {
     "babel": "^5.8.23",
-    "chai": "^3.2.0",
-    "eslint": "^1.2.1",
+    "chai": "3.4.1",
+    "eslint": "1.9.0",
     "eslint-plugin-nodeca": "^1.0.3",
-    "jsdoc-to-markdown": "^1.1.1",
-    "mocha": "^2.2.5",
+    "jsdoc-to-markdown": "1.2.1",
+    "mocha": "2.3.3",
     "mocha-sinon": "^1.1.4",
-    "sinon": "^1.16.1",
+    "sinon": "1.17.2",
     "sinon-chai": "^2.8.0"
   },
   "dependencies": {

@@ -1,6 +1,6 @@
 /* eslint no-unused-expressions:0 */
 
-import setStateMixin from '../src'
+const setStateMixin = require('../src')
 
 describe('setStateMixin', () => {
   let state

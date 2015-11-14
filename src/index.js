@@ -12,7 +12,7 @@
  * })
  */
 
-import _ from 'lodash'
+const _ = require('lodash')
 
 /**
  * Initializes the mixin.
@@ -20,7 +20,7 @@ import _ from 'lodash'
  * @param {Object} initialState - The initial state for the store
  * @returns {Mixin} - The mixin with the initialState closure
  */
-export default function setStateMixin(initialState) {
+module.exports = function setStateMixin(initialState) {
 
   /**
    * @mixin
