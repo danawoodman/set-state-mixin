@@ -1,6 +1,6 @@
 # set-state-mixin
 
-![](https://img.shields.io/travis/danawoodman/set-state-mixin.svg)
+[![](https://img.shields.io/travis/danawoodman/set-state-mixin.svg)](https://travis-ci.org/danawoodman/set-state-mixin)
 [![Dependency Status](https://img.shields.io/david/danawoodman/set-state-mixin.svg)](https://david-dm.org/danawoodman/set-state-mixin)
 ![](https://img.shields.io/npm/dm/set-state-mixin.svg)
 ![](https://img.shields.io/npm/v/set-state-mixin.svg)
